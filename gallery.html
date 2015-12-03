@@ -1,53 +1,55 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<title>RadicalPhoto Gallery</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="author" content="RadicalPhoto">
+	<meta name="description" content="RadicalPhoto's image gallery.">
 	<link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+	<link href="css/lightbox.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/radicalphoto.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>RadicalPhoto</h1>
+    </header>
 
-<div id="header">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="gallery.html">Gallery</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="contact.html">Contact</a>
-	</ul>
+    <div id="main_wrapper">
+        <section id="content">
+            <h2>Gallery</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <div id="gallery">
+                <ul class="thumbs">
+                    <li id="blueDress"><a href="images/blue_dress.jpg" data-lightbox="gallery" data-title="Blonde woman in blue dress in front of wooden fence."><img src="images/blue_dress_thumb.jpg" width="150" height="100" alt="Blonde woman in blue dress in front of wooden fence."></a></li>
+                    <li id="boxer"><a href="images/boxer.jpg" data-lightbox="gallery" data-title="Overhead headshot of a male boxer."><img src="images/boxer_thumb.jpg" width="150" height="100" alt="Overhead headshot of a male boxer."></a></li>
+                    <li id="countryBoy"><a href="images/country_boy_relaxing.jpg" data-lightbox="gallery" data-title="A cowboy sits down and leans agains a wall with his hat slightly tipped."><img src="images/country_boy_relaxing_thumb.jpg" width="150" height="100" alt="A cowboy sits down and leans agains a wall with his hat slightly tipped."></a></li>
+                    <li><a href="images/eye.jpg" data-lightbox="gallery" data-title="A black and white photo of an eye with rainbow hues inside."><img src="images/eye_thumb.jpg" width="150" height="100" alt="A black and white photo of an eye with rainbow hues inside."></a></li>
+                    <li><a href="images/ice_swim.jpg" data-lightbox="gallery" data-title="A silhouette of a swimmer emerging from a frozen body of water."><img src="images/ice_swim_thumb.jpg" width="150" height="100" alt="A silhouette of a swimmer emerging from a frozen body of water."></a></li>
+                    <li><a href="images/sitting.jpg" data-lightbox="gallery" data-title="A man sits at the side of the road, waiting for someone."><img src="images/sitting_thumb.jpg" width="150" height="100" alt="A man sits at the side of the road, waiting for someone."></a></li>
+                </ul>
+                <p><img id="showcase" src="images/blue_dress.jpg" width="800" height="533" alt="Blonde woman in blue dress in front of wooden fence"></p>
+            </div><!-- #gallery -->
+	    </section>
 
-	<h1>RadicalPhoto</h1>
-
-</div>
-
-<div id="main_wrapper">
-
-	<div id="content">
-	<h2>Gallery</h2>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-
-	<div id="gallery">
-		<ul>
-			<li><a href="images/blue_dress.jpg"><img src="images/blue_dress_thumb.jpg"></a></li>
-			<li><a href="images/boxer.jpg"><img src="images/boxer_thumb.jpg"></a></li>
-			<li><a href="images/cow.jpg"><img src="images/cow_thumb.jpg"></a></li>
-			<li><a href="images/country_boy_relaxing.jpg"><img src="images/country_boy_relaxing_thumb.jpg"></a></li>
-			<li><a href="images/eye.jpg"><img src="images/eye_thumb.jpg"></a></li>
-			<li><a href="images/ice_swim.jpg"><img src="images/ice_swim_thumb.jpg"></a></li>
-			<li><a href="images/sitting.jpg"><img src="images/sitting_thumb.jpg"></a></li>
-		</ul>
-
-		<p><img src="images/blue_dress.jpg" alt=""></p>
-
-	</div>
-
-	</div>
-
-	<div id="footer">
-	<p>All content &copy; Copyright</p>
-	</div>
-
-</div>
-
+	    <footer>
+            <p><small>All content &copy; Copyright</small></p>
+        </footer>
+    </div><!-- #main-wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/vendor/lightbox.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
